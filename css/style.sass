@@ -1,12 +1,388 @@
 //tools
-@import '../sass/tools/_variables'
-@import '../sass/tools/_extends'
-@import '../sass/tools/mixin'
+@import '../css/tools/_extends'
+@import '../css/tools/_variable'
 
 //general
-@import '../sass/general/_reset'
-@import '../sass/general/_body'
+@import '../css/general/_reset'
+@import '../css/general/_body'
 
 //==================== INDEX.HTML - START =====================
 
 //====== header start =================================
+
+#containerLogo
+    width: 100px
+
+.menu
+    color: $blue
+
+#menu-active
+    color: $bluelight
+
+.menu, #menu-active
+    font-size: 0.8rem
+
+//====== header end =================================
+
+//====== main start =================================
+
+#logo
+    width: 100px
+
+.Logo
+    width: 110px
+    @media (min-width: 768px)
+        width: 150px
+
+
+.animeLogo
+    display: none
+
+#nameEntreprise
+    text-align: center
+    font-size: 1.5rem
+    @media (min-width: 768px)
+        font-size: 2rem
+    @media (min-width: 1024px)
+        font-size: 3rem
+
+.nameS
+    color: $blue
+
+.nameF
+    color: $orange
+
+#containerIllustration
+    @extend %flex-center
+
+#illustrationFormation
+    width: 200px
+    border-radius: 50%
+    @media (min-width: 768px)
+        width: 350px
+    @media (min-width: 1024px)
+        width: 450px
+    @media (min-width: 1280px)
+        width: 640px
+
+#paratopLeft
+    color: $orange
+    margin-top: 50px
+    text-align: center
+    @media (min-width: 1024px)
+        text-align: start
+        margin-left: 15%
+
+#parabottomRight
+    color: white
+    text-align: center
+    @media (min-width: 768px)
+        color: $blue
+    @media (min-width: 1024px)
+        text-align: end
+        margin-right: 15%
+
+#paratopLeft, #parabottomRight
+    font-size: 0.6rem
+    @media (min-width: 768px)
+        font-size: 0.9rem
+    @media (min-width: 1024px)
+        font-size: 1.1rem
+    @media (min-width: 1500px)
+        font-size: 1.5rem
+
+#containerCard
+    @extend %flex-center
+    flex-direction: column
+    @media (min-width: 768px)
+        flex-direction: row
+
+.card
+    background-color: #f5f5f5
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+
+.card-title 
+    text-align: center
+    color: $orange
+
+.small
+    font-size: 0.8rem
+    color: $blue
+    margin-top: 15px
+
+.big
+    font-size: 1.5rem
+    color: $blue
+    @media (min-width: 768px)
+        font-size: 1.2rem
+    @media (min-width: 1024px)
+        font-size: 1.5rem
+
+#containerQualiopi
+    display: flex
+    align-items: center
+
+#titleQualiopi
+    color: $orange
+    font-size: 0.9rem
+    @media (min-width: 768px)
+        font-size: 1.2rem
+
+#logoQualiopi
+    width: 100px
+
+#certification
+    @media (min-width: 1024px)
+        display: flex
+
+#textQualiopi
+    margin-top: 5px
+
+
+#descriptionQualiopi, #solutionFormationQualiopi
+    margin: 5px
+    font-size: 0.8rem
+    color: white
+    @media (min-width: 768px)
+        color: black
+        font-size: 1rem
+
+#descriptionQualiopi
+    @media (min-width: 1024px)
+        width: 50%
+        height: 200px
+        border-right: 1px double $orange
+
+#solutionFormationQualiopi
+    @media (min-width: 1024px)
+        width: 50%
+        text-align: justify
+        margin-right: 20px
+        margin-left: 20px
+
+#containerHandicapLogo
+    @media (min-width: 1280px)
+        display: flex
+        flex-direction: column
+        width: 70%
+        margin-right: auto
+        margin-left: auto
+
+#containerHandicap
+    margin-top:100px
+
+#titleHandicap
+    font-size: 0.9rem
+    text-align: center
+    color: $orange
+    @media (min-width: 768px)
+        font-size: 1.2rem
+
+#textHandicap
+    color: white
+    font-size: 0.8rem
+    margin: 20px
+    @media (min-width: 768px)
+        font-size: 1rem
+        color: black
+    @media (min-width: 1280px)
+        text-align: center
+
+#containerLogoHandicap, .logoHandicap
+    width: 100px
+    margin-left: auto
+    margin-right: auto
+
+#containerLogoHandicap
+    margin-bottom: 100px
+
+#containerCounters
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    @media (min-width: 768px)
+        flex-direction: row
+        justify-content: center
+
+.containerCounter
+    background-color: rgba(0, 0, 0, 0.1)
+    width: 300px
+    height: 110px
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+    border-radius: 30px
+    margin: 20px
+    @media (min-width: 768px)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        height: 150px
+    @media (min-width: 1024px)
+        height: 200px
+        width: 400px
+
+.counter
+    color: $pink
+    font-size: 1.5rem
+    @media (min-width: 768px)
+        font-size: 2rem
+
+.textCounter
+    font-size: 0.7rem
+    color: white
+    @media (min-width: 768px)
+        font-size: 0.9rem
+    @media (min-width: 1024px)
+        font-size: 0.8rem
+        color: black
+
+#containerChoiceFormation, #containerForms
+    margin-top: 100px
+
+#titleChoiceFormation
+    color: $orange
+    text-align: center
+
+#subTitleChoiceFormation
+    background-color: $orange
+    color: white
+    text-align: center
+
+.textChoiceFormation
+    color: $blue
+
+#containerForms
+    @media (min-width: 1280px)
+        display: flex
+        justify-content: space-around
+
+#subTitleForm
+    color: $orange
+    text-align: center
+    font-size: 0.8rem
+    @media (min-width: 768px)
+        font-size: 1rem
+
+#titleForm
+    color: red
+    font-size: 0.9rem
+    @media (min-width: 768px)
+        font-size: 1.1rem
+
+.icon, .textForm
+    margin-left: 5px
+
+.icon
+    color: $orange
+
+.textForm
+    font-size: 0.8rem
+    @media (min-width: 768px)
+        font-size: 1rem
+
+#containerImageForm
+    margin-top: 20px
+
+.LQ
+    margin-left: 50px
+    margin-right: 10px
+
+#boxInput
+    margin-top: 50px
+    margin-bottom: 50px
+    @media (min-width: 1280px)
+        width: 500px
+
+form > input, textarea
+    width: 90%
+    margin-bottom: 10px
+    height: 50px
+    border-radius: 10px
+    border: 1px none
+    background: rgba(107, 127, 176, 0.3)
+
+form
+    display: flex
+    flex-direction: column
+    align-items: center
+
+input::placeholder, textarea::placeholder
+    color: white
+    opacity: 1
+
+textarea
+    height: 200px
+
+#btnForm
+    width: 90%
+
+//======== main END =========================
+
+//======== FOOTER START =========================
+
+footer
+    float: right
+
+#signature
+    color: rgba(156, 154, 43, 0.933)
+    font-family: destroy
+    font-size: 0.8rem
+
+#copyright
+    font-family: destroy
+    font-size: 0.5rem
+
+//======== FOOTER END =========================
+
+//======== mediaqueries END =========================
+
+
+
+//==================== INDEX.HTML - END =====================
+
+//======== MODAL START =========================
+
+.modal-content
+    background-color: #090909
+
+.titleSignature
+    text-align: center
+    color: rgba(156, 154, 43, 0.933)
+    font-family: destroy
+    font-size: 2em
+
+.subTitleSignature
+    text-align: center
+    color: white
+    font-family: destroy
+    font-size: 0.8em
+
+.facebook:hover
+    color: #3b5998
+
+
+.twitter:hover
+    color: #3cf
+
+
+.instagram:hover
+    color: #bd38a0
+
+
+.social-btns 
+    padding: 3px
+    text-align: center
+
+
+.facebook, .twitter, .instagram 
+    margin: 5px
+    color: rgba(156, 154, 43, 0.933)
+
+#containerButtonClose
+    display: flex
+    justify-content: center
+
+#buttonClose
+    width: 100px
+    color: rgba(156, 154, 43, 0.933)
+
