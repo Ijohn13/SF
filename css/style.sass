@@ -10,6 +10,12 @@
 
 //====== header start =================================
 
+#navbar
+    position: sticky
+    top: 0
+    z-index: 2
+    transition: all 0.2s ease-in-out
+
 #containerLogo
     width: 100px
 
@@ -21,6 +27,8 @@
 
 .menu, #menu-active
     font-size: 0.8rem
+    @media (min-width: 1024px)
+        font-size: 1.2rem
 
 //====== header end =================================
 
@@ -37,6 +45,10 @@
 
 .animeLogo
     display: none
+
+.animeNavbar
+    background-color: white
+    border-bottom: 1px solid #f1f1f1
 
 #nameEntreprise
     text-align: center
@@ -339,6 +351,12 @@ footer
 
 
 //==================== INDEX.HTML - END =====================
+
+//==================== PRESENTATION.HTML - START =====================
+
+
+
+//==================== PRESENTATION.HTML - END =====================
 
 //======== MODAL START =========================
 
