@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script>
-            ScrollReveal.debug = true;
-        </script>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- CSS only -->
-        <link href=" http://fonts.cdnfonts.com/css/destroy " rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Solution Formation</title>
-    </head>
+
+<head>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal.debug = true;
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href=" http://fonts.cdnfonts.com/css/destroy " rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Solution Formation</title>
+</head>
 
 <body>
     <header id="navbar">
@@ -31,10 +32,10 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a id="menu-active" class="nav-link active m-3" aria-current="page" href="#">Accueil</a>
-                        <a class="nav-link menu m-3" href="./pages/presentation.html">Qui sommes nous ?</a>
-                        <a class="nav-link menu m-3" href="./pages/nosformations.html">Nos Formations</a>
-                        <a class="nav-link menu m-3" href="./pages/contact.html" >Contact</a>
+                        <a class="nav-link menu m-3" aria-current="page" href="../index.html">Accueil</a>
+                        <a id="menu-active" class="nav-link active m-3" href="#">Qui sommes nous ?</a>
+                        <a class="nav-link menu m-3" href="./nosformations.html">Nos Formations</a>
+                        <a class="nav-link menu m-3" href="./contact.html" >Contact</a>
                     </div>
                 </div>
             </div>
@@ -42,176 +43,68 @@
     </header>
 
     <main>
-        <section>
-            <h1 id="nameEntreprise">
-                <span class="nameS">SOLUTION</span>
-                <img 
-                    src="./images/logoSansNom.png" 
-                    alt="logo solution formation" 
-                    class="img-fluid Logo"
-                >
-                <span class="nameF">FORMATION</span>
-            </h1>
-            <div id="containerIllustration">
-                <img 
-                    src="./images/formation_2(1).png" 
-                    alt="illustration de personne en formation" 
-                    id="illustrationFormation"
-                    class="img-fluid"
-                >
+        <article id="containers-presentation">
+            <div id="container-title-para">
+                <p class="para-presentation">CRÉER VOTRE PROPRE ENTREPRISE AVEC UNE FORMATION SUR MESURE</p>
+                <H2 id="title-presentation">Qui sommes nous ?</H2>
+                <p class="para-presentation">FAITES UN POINT SUR VOTRE CARRIERE AVEC LE BILAN COMPÉTENCE.</p>
             </div>
-            <div>
-                <p id="paratopLeft">CRÉER VOTRE PROPRE ENTREPRISE AVEC UNE FORMATION SUR MESURE</p>
-                <p id="parabottomRight">FAITES UN POINT SUR VOTRE CARRIÈRE AVEC LE BILAN COMPÉTENCE.</p>
+            <div id="container-presentation">
+                <img src="../images/img-presentation.jpeg" id="img-presentation" class="img-fluid" alt="illustration d'un cours de foramtion">
+            </div>
+        </article>
+
+        <article id="container-article">
+            <div class="article-para para1">
+                <div id="container-title-article">
+                    <img src="../images/BD3B6962-A84A-42B1-A81D-5F2A25F85DD8.png" id="logo" class="img-fluid " alt="logo solutlion formation">
+                    <h6 id="title-article"><span class="crochets">[</span>Solution Formation<span class="crochets">]</span></h6>
+                </div>
+                <p class="para"><span class="solutionFormation">Solution Formation</span> est un jeune 
+                    organisme de formation qui se spécialise dans l'accompagement de projet professionnel 
+                    et personnel. Elle met son savoir faire et ses compétences aux services des salariés, 
+                    aux demandeurs d'emploi, et de porteur de projet.
+                </p>
+                
+                <p class="para"><span class="solutionFormation">Solution Formation</span> c'est des 
+                    formation réalisées à distance ou en présentiel, des formations individuelles, et 
+                    un accompagnement personnalisé.
+                </p>
+
+                <p class="para">Nos formateurs sont validés par nos 
+                    équipes sur leur expertise métier et leur expérience pédagogique.
+                </p>
+
+                <p class="para"><span class="solutionFormation">Solution Formation</span> s'engage à tous 
+                    les niveaux pour vous assurer la meilleures expérience formation, un suivi commercial 
+                    et administratif pour vous accompagner à toutes les étapes de votre projet de formation 
+                    y compris dans l'optimisation du financement, une préparation technique et logistique.
+                </p>
             </div>
 
-            <div id="containerCard">
-                <div class="card m-3" style="width: 18rem; height: 20rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Formation sur 7 H</h5>
-                        <p class="card-text small">Bien préparer sa création d'entreprise</p>
-                        <p class="card-text big">
-                            E-learning<br>Cours en visio
-                        </p>
-                        <p class="card-text small">Session toute l'année</p>
+            <div class="article-para para2">
+                <div id="container-logo-article">
+                    <div id="container-image">
+                        <img id="image-article" class="img-fluid" src="../images/image article.jpeg" alt="">
                     </div>
-                </div>
-
-                <div class="card m-3" style="width: 18rem; height: 20rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Formation sur 14 H</h5>
-                        <p class="card-text small">Bien préparer sa création d'entreprise</p>
-                        <p class="card-text big">
-                            E-learning<br>Cours en visio
-                        </p>
-                        <p class="card-text small">Session toute l'année</p>
-                    </div>
-                </div>
-
-                <div class="card m-3" style="width: 18rem; height: 20rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Formation sur 28 H</h5>
-                        <p class="card-text small">Bien préparer sa création d'entreprise</p>
-                        <p class="card-text big">
-                            E-learning<br>Cours en visio<br>Cours en présentiel
-                        </p>
-                        <p class="card-text small">Session toute l'année</p>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <a href="./pages/nosformations.html#prixFormations" id="prixFormations" class="btn btn-info text-white">Prix formations</a>
-            </div>
-        </section>
-
-        <article>
-            <div id="containerQualiopi">
-                <div>
-                    <img src="../images/BD3B6962-A84A-42B1-A81D-5F2A25F85DD8.png" alt="logo solution formation"
-                        id="logo">
-                </div>
-                <div id="containerTitleQualiopi">
-                    <h2 id="titleQualiopi">ORGANISME DE FORMATION CERTIFIÉ</h2>
-                </div>
-            </div>
-            <div id="certification">
-                <div id="descriptionQualiopi">
-                    <img src="../images/LogoQualiopi-72dpi-Avec-Marianne.png" alt="logo qualiopi" id="logoQualiopi"
-                        class="img-fluid">
-                    <p id="textQualiopi">La certification qualité a été délivrée au titre de la ou des catégories
-                        d'action suivante :<br>
-                        ACTIONS FORMATION<br>
-                        BILANS DE COMPTÉTENCES
-                    </P>
-                </div>
-                <div id="solutionFormationQualiopi">
-                    <p id="textSolutionFormationQualiopi">
-                        <span class="nameS">Solution</span> <span class="nameF">formation</span> a obtenu la certification QUALIOPI le
-                        20 Mars 2022. Cette
-                        certification qualité a été délivrée au titre des catégories d'actions suivantes :<br>
-                        Actions de formation continue et actions de formation en apprentissage.<br>
-                        La formation Qualiopi a pour objectif d'attester de la qualité du processus mise en oeuvre par
-                        les prestataires d'actions concurrent au développement des compétences et de permettre une plus
-                        grande lisibilité de l'offre de formation auprès des entreprise et des usagers.
+                    <p class="para pRight">Notre centre de foramtion a obtenu la certification QUALIOPI et a engagé 
+                        le processus pour obtenir le label EDUFORM.
+                        <br>
+                        Solution Foramtion permet aux 
+                        personnes en situation de handicap de bénéficier de moyen adapté afin de suivre 
+                        leur formation. Nous pouvons étudier les aménagements nécessaires pour garantir 
+                        l'apprentissage pour tous. Vous pouvez joindre notre référent par mail au : 
+                        <span class="mailRef">referent.handicap.sf@gmail.com</span>
+                        <br>
+                        <br>
+                        Nos conseillers sont à votre disposition pour vous guider, conseiller 
+                        et vous accompagner dans vos démarches par téléphone 0102030405 ou par mail au : 
+                        solutionformation.contact@gmail.com
                     </p>
                 </div>
             </div>
-
-            <div id="containerHandicapLogo">
-                <div id="containerHandicap">
-                    <h5 id="titleHandicap">FORMATION ADAPTÉ</h5>
-                    <p id="textHandicap">
-                        <span class="nameS">Solution</span> <span class="nameF">Formation</span> met tout en oeuvre pour permettre aux
-                        personnes en
-                        situation de handicap de bénéficier de conditions adaptées d'accès et de
-                        suivi de la formation. Nous étudions les aménagements nécessaire à la
-                        compensation de tout handicap afin de garantir les mêmes chances à tout
-                        stagiaire.<br>Nous contacter par mail : referenthandicap.info@gmail.com
-                    </p>
-                </div>
-                <div id="containerLogoHandicap">
-                    <img class="logoHandicap" src="../images/573accompagnement.handicap.jpg.jpg" alt="logo handicap">
-                </div>
-            </div>
         </article>
-
-        <article id="containerCounters">
-            <div class="containerCounter">
-                <div>
-                    <p id="counter1" class="counter">0 %</p>
-                </div>
-                <p class="textCounter">des apprenants ont bénéficiés d'une prise en charge</p>
-            </div>
-            <div class="containerCounter">
-                <div>
-                    <p id="counter2" class="counter">0 %</p>
-                </div>
-                <p class="textCounter">des formations sont concues et animées par des entrepreneurs</p>
-            </div>
-        </article>
-
-        <article id="containerChoiceFormation">
-            <h5 id="titleChoiceFormation">FORMATIONS</h5>
-            <div id="subTitleChoiceFormation">
-                choisis ta formation
-            </div>
-            <div class="card-group">
-                <div class="card">
-                    <div>
-                        <img src="../images/laptop-g411cdf269_1280.jpg" class="card-img-top img-fluid"
-                            alt="formation e-learning" style="height: 275px;">
-                    </div>
-                    <button class="btn btn-info text-white">Formation<br>E-learning</button>
-                    <div class="card-body">
-                        <p class="card-text textChoiceFormation">Formation dans toute la france</p>
-                        <p class="card-text textChoiceFormation">session toute l'année</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <img src="../images/training-gd74e2b88f_640.jpg" class="card-img-top img-fluid"
-                            alt="formation e-learning" style="height: 275px">
-                    </div>
-                    <button class="btn btn-info text-white">Cours<br>en présentiel</button>
-                    <div class="card-body">
-                        <p class="card-text textChoiceFormation">Formation dans toute la france</p>
-                        <p class="card-text textChoiceFormation">session toute l'année</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <img src="../images/virtual-g1d0631819_1280.png" class="card-img-top img-fluid"
-                            alt="formation e-learning" style="height: 275px">
-                    </div>
-                    <button class="btn btn-info text-white">Cours<br>en visio</button>
-                    <div class="card-body">
-                        <p class="card-text textChoiceFormation">Formation dans toute la france</p>
-                        <p class="card-text textChoiceFormation">session toute l'année</p>
-                    </div>
-                </div>
-            </div>
-        </article>
-
+        <hr>
         <section id="cF">
             <div id="containeForms">
                 <div>
@@ -372,14 +265,16 @@
         </div>
     </div>
 
+    <!-- JavaScript Bundle with Popper -->
     <script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
         crossorigin="anonymous"
     >
     </script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./js/script.js"></script>
+    <script src="../JS/script.js"></script>
 </body>
+
 </html>

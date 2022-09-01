@@ -5,7 +5,7 @@ const navigation = document.querySelector("#navbar");
 const logo = document.querySelector(".logoNone");
 
 window.addEventListener('scroll', () => {
-    if(window.scrollY > 50) {
+    if(window.scrollY > 200) {
         navigation.classList.add('animeNavbar');
         logo.classList.remove('animeLogo');
     } else {
@@ -73,15 +73,15 @@ ScrollReveal().reveal('#objectifs-title', { origin: 'top' });
 ScrollReveal().reveal('#objectifs-para', { origin: 'bottom' });
 ScrollReveal().reveal('#container-mockup-image', {opacity: 0.2, delay: 1000});
 ScrollReveal().reveal('#container-mockup-para', { origin: 'right', delay: 1000});
-ScrollReveal().reveal('#container-responsable-img', { 
+/* ScrollReveal().reveal('#container-responsable-img', { 
     origin: 'left', 
     distance: '700px', 
     delay: 1000});
 ScrollReveal().reveal('#container-responsable-para', { 
     origin: 'right', 
     distance: '700px', 
-    delay: 1000});
-ScrollReveal().reveal('#select-formation-title', { 
+    delay: 1000}); */
+/* ScrollReveal().reveal('#select-formation-title', { 
     origin: 'left', 
     distance: '700px', 
     delay: 1000});
@@ -92,11 +92,11 @@ ScrollReveal().reveal('.sf-para1', {
 ScrollReveal().reveal('.sf-para2', { 
     origin: 'bottom', 
     distance: '500px', 
-    delay: 1000});
-ScrollReveal().reveal('.container-select-formation', { 
+    delay: 1000}); */
+/* ScrollReveal().reveal('.container-select-formation', { 
     origin: 'bottom', 
     distance: '500px', 
-    delay: 1000});
+    delay: 1000}); */
 ScrollReveal().reveal('#container-objectif', {
     rotate: {
         x: 20,

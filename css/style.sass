@@ -41,6 +41,8 @@
     width: 110px
     @media (min-width: 768px)
         width: 150px
+    @media (min-width: 1024px)
+        width: 400px
 
 
 .animeLogo
@@ -57,6 +59,7 @@
         font-size: 2rem
     @media (min-width: 1024px)
         font-size: 3rem
+        margin-top: 100px
 
 .nameS
     color: $blue
@@ -251,6 +254,12 @@
 #containerChoiceFormation, #containerForms
     margin-top: 100px
 
+#cF
+    @media (min-width: 1280px)
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+
 #titleChoiceFormation
     color: $orange
     text-align: center
@@ -263,23 +272,19 @@
 .textChoiceFormation
     color: $blue
 
-#containerForms
-    @media (min-width: 1280px)
-        display: flex
-        justify-content: space-around
-
 #subTitleForm
     color: $orange
     text-align: center
     font-size: 0.8rem
     @media (min-width: 768px)
-        font-size: 1rem
+        font-size: 1.3rem
+        margin-top: 100px
 
 #titleForm
     color: red
     font-size: 0.9rem
     @media (min-width: 768px)
-        font-size: 1.1rem
+        font-size: 1.3rem
 
 .icon, .textForm
     margin-left: 5px
@@ -289,8 +294,10 @@
 
 .textForm
     font-size: 0.8rem
+    color: white
     @media (min-width: 768px)
-        font-size: 1rem
+        font-size: 1.2rem
+        color: black
 
 #containerImageForm
     margin-top: 20px
@@ -317,6 +324,8 @@ form
     display: flex
     flex-direction: column
     align-items: center
+    @media (min-width: 1280px)
+        margin-top: 50px
 
 input::placeholder, textarea::placeholder
     color: white
@@ -346,17 +355,424 @@ footer
 
 //======== FOOTER END =========================
 
-//======== mediaqueries END =========================
-
-
-
 //==================== INDEX.HTML - END =====================
 
 //==================== PRESENTATION.HTML - START =====================
 
+#containers-presentation
+    display: flex
+    flex-direction: row-reverse
+    align-items: center
+    @media (min-width: 768px)
+        justify-content: space-around
+    @media (min-width: 1280px)
+        justify-content: center
+        margin-top: 200px
 
+#container-presentation
+    width: 250px
+    margin: 10px
+    @media (min-width: 1024px)
+        width: 400px
+
+#img-presentation
+    border-radius: 30px
+
+.para-presentation
+    font-size: 0.5rem
+    color: $orange
+    @media (min-width: 768px)
+        font-size: 0.8rem
+    @media (min-width: 1280px)
+        font-size: 1.2rem
+
+#title-presentation
+    font-size: 1.2rem
+    color: $blue
+    margin-bottom: 20px
+    @media (min-width: 768px)
+        font-size: 1.5rem
+    @media (min-width: 1280px)
+        font-size: 3rem
+
+#title-presentation, .para-presentation
+    text-align: center
+    margin: 5px
+
+#container-article //here
+    @media (min-width: 1280px)
+        display: flex
+        align-items: center
+
+#container-title-article
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    @media (min-width: 768px)
+        justify-content: center
+
+#title-article
+    @media (min-width: 768px)
+        font-size: 1.5rem
+
+.crochets
+    color: $orange
+
+.para
+    margin: 20px
+    text-align: justify
+    @media (min-width: 768px)
+        font-size: 1.2rem
+
+.pRight
+    @media (min-width: 1280px)
+        margin-top: 50px
+
+.para2
+    @media (min-width: 1280px)
+        display: flex
+        height: 430px
+
+#container-logo-article
+    @media (min-width: 1280px)
+        margin-top: 55px
+
+#container-image
+    display: none
+    @media (min-width: 1280px)
+        display: block
+
+#container-image
+    @media (min-width: 1280px)
+        position: relative
+        width: 200px
+        float: right
+        margin: 20px
+
+#image-article
+    @media (min-width: 1280px)
+        position: relative
+        border-radius: 50%
 
 //==================== PRESENTATION.HTML - END =====================
+
+//==================== NOSFORMATIONS.HTML - START =====================
+
+#container-formation-ti
+    display: flex
+    flex-direction: row-reverse
+    @media (min-width: 1018px)
+        justify-content: flex-end
+
+#container-formation-imgworld
+    width: 300px
+    margin-right: 20px
+    @media (min-width: 768px)
+        width: 350px
+    @media (min-width: 1018px)
+        width: 400px
+    @media (min-width: 1280px)
+        width: 600px
+
+#imgWorld
+    border-radius: 50%
+
+#container-formation-para
+    position: relative
+    margin-top: 60px
+    margin-right: -100px
+    height: 200px
+    width: 80%
+    border-radius: 0 30% 30% 0
+    background-color: white
+    @media (min-width: 768px)
+        height: 250px 
+    @media (min-width: 1018px)
+        width: 60%
+        height: 300px
+    @media (min-width: 1280px)
+        height: 500px
+
+#formation-title
+    font-size: 0.9rem
+    color: $orange
+    @media (min-width: 768px)
+        font-size: 1.5rem
+    @media (min-width: 1018px)
+        font-size: 2rem
+    @media (min-width: 1280px)
+        font-size: 2.5rem
+
+#formation-para
+    font-size: 0.8rem
+    color: $blue
+    @media (min-width: 768px)
+        font-size: 1.1rem
+    @media (min-width: 1018px)
+        font-size: 1.5rem
+    @media (min-width: 1280px)
+        font-size: 2rem
+
+#formation-title, #formation-para
+    margin-top: 30px
+    margin-left: 10px
+    @media (min-width: 1280px)
+        margin-top: 100px
+
+#objectifs-title
+    text-align: center
+    color: $blue
+    margin-top: 50px
+    @media (min-width: 768px)
+        font-size: 1.5rem
+    @media (min-width: 1018px)
+        font-size: 2rem
+
+#objectifs-para
+    text-align: center
+    color: $orange
+    font-size: 0.8rem
+    @media (min-width: 768px)
+        font-size: 1.1rem
+    @media (min-width: 1018px)
+        font-size: 1.5rem
+
+#container-mockup
+    display: flex
+    align-items: center
+    justify-content: center
+    @media (min-width: 768px)
+        margin-top: 100px
+
+#mockup-image
+    width: 250px
+    border-radius: 30px
+    @media (min-width: 768px)
+        width: 300px
+    @media (min-width: 1018px)
+        width: 400px
+    @media (min-width: 1280px)
+        width: 500px
+
+#container-mockup-para
+    height: 150px
+    background-color: $orange
+    position: relative
+    margin-left: -50px
+    border-radius: 30px
+    @media (min-width: 667px)
+        width: 250px
+    @media (min-width: 768px)
+        width: 300px
+        height: 200px
+        display: flex
+        flex-direction: column
+        justify-content: center
+    @media (min-width: 1018px)
+        width: 400px
+        height: 300px
+    @media (min-width: 1280px)
+        width: 500px
+        height: 400px
+
+
+#mockup-title
+    font-size: 0.9rem
+    color: $blue
+    text-align: center
+    margin-top: 15px
+    @media (min-width: 667px)
+        font-size: 1.3rem
+    @media (min-width: 1018px)
+        font-size: 1.5rem
+    @media (min-width: 1280px)
+        font-size: 1.8rem
+
+#mockup-para
+    font-size: 0.5rem
+    text-align: center
+    margin-top: 20px
+    @media (min-width: 667px)
+        font-size: 0.9rem
+    @media (min-width: 1018px)
+        font-size: 1.1rem
+    @media (min-width: 1280px)
+        font-size: 1.5rem
+
+#container-responsable
+    @media (min-width: 667px)
+        display: flex
+        justify-content: center
+        align-items: center
+    @media (min-width: 1280px)
+        justify-content: space-around
+
+#container-responsable-img
+    margin-top: 100px
+    margin-left: 50px
+    width: 100px
+    @media (min-width: 667px)
+        width: 250px
+    @media (min-width: 1018px)
+        width: 350px
+    @media (min-width: 1280px)
+        width: 450px
+
+#container-responsable-para
+    @media (min-width: 1280px)
+        margin-right: 200px
+
+#responsable-img
+    border-radius: 30px
+
+#responsable-title
+    color: $blue
+    font-size: 1.1rem
+    @media (min-width: 768px)
+        font-size: 1.5rem
+    @media (min-width: 1018px)
+        font-size: 2rem
+    @media (min-width: 1080px)
+        font-size: 2.3rem
+
+#responsable-para
+    color: $orange
+    font-size: 0.8rem
+    @media (min-width: 667px)
+        margin-left: 25px
+    @media (min-width: 768px)
+        font-size: 1.1rem
+    @media (min-width: 1018px)
+        font-size: 1.5rem
+    @media (min-width: 1280px)
+        font-size: 1.8rem
+
+#responsable-title, #responsable-para
+    text-align: center
+
+#select-formation-title
+    margin-top: 100px
+    color: $orange
+    text-align: center
+    font-size: 1.1rem
+    @media (min-width: 768px)
+        font-size: 1.5rem
+    @media (min-width: 1018px)
+        font-size: 2rem
+
+.select-formation-para
+    text-align: center
+    font-size: 0.9
+    @media (min-width: 768px)
+        font-size: 1.3rem
+    @media (min-width: 1018px)
+        font-size: 1.5rem
+
+.container-select-formation
+    display: flex
+
+.sf-para1
+    margin-top: 50px
+    color: $blue
+
+.sf-para2
+    color: $orange
+
+.select-formation-card
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+    background-color: rgba(0, 0, 0, 0.1)
+    width: 300px
+    border-radius: 30px
+    padding-top: 50px
+    padding-bottom: 50px
+    margin-left: auto
+    margin-right: auto
+    @media (min-width: 768px)
+        width: 400px
+
+.select-formation-para1
+    color: $pink
+
+.select-formation-para2
+    color: white
+
+.sfpara1
+    font-size: 0.9rem
+    @media (min-width: 768px)
+        font-size: 1.3rem
+
+.sfpara2
+    font-size: 1.5rem
+    @media (min-width: 768px)
+        font-size: 2rem
+
+.select-formation-para1, .select-formation-para2
+    text-align: center
+
+.container-button
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    @media (min-width: 768px)
+        justify-content: space-evenly
+
+#container-objectif
+    margin-top: 100px
+    @media (min-width: 1018px)
+        display: flex
+
+.sfcard1
+    @media (min-width: 1280px)
+        margin-right: 0
+
+.sfcard2
+    @media (min-width: 1280px)
+        margin-left: 0
+
+.sfmiddlecard
+    @media (min-width: 1280px)
+        margin-right: 0
+
+.sfcard3
+    @media (min-width: 1280px)
+        margin-left: 0
+
+.objectif-card
+    margin-left: auto
+    margin-right: auto
+    width: 300px
+    border-radius: 30px
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px
+    background-color: rgba(0, 0, 0, 0.1)
+    @media (min-width: 768px)
+        width: 450px
+        height: 300px
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+.objectif-st
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 10px
+
+.objectif-svg
+    color: $orange
+    @media (min-width: 768px)
+        font-size: 30px
+
+.objectif-title
+    color: $blue
+
+.objectif-para
+    text-align: justify
+    padding: 10px
+    font-size: 0.9rem
+    @media (min-width: 768px)
+        font-size: 1.1rem
+
+//==================== NOSFORMATIONS.HTML - END =====================
 
 //======== MODAL START =========================
 
